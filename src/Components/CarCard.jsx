@@ -13,24 +13,8 @@ const CarCard = ({ car }) => {
           {car.brand} {car.model}
         </h2>
         <p className="text-gray-700">
-          <strong>Year:</strong> {car.year}
-        </p>
-        <p className="text-gray-700">
           <strong>Daily Rate:</strong> ${car.dailyRate}
-        </p>
-        <p className="text-gray-700">
-          <strong>Seats:</strong> {car.seat}
-        </p>
-        <p className="text-gray-700">
-          <strong>Category:</strong> {car.category}
-        </p>
-        <p className="text-gray-700">
-          <strong>Fuel Type:</strong> {car.fuelType}
-        </p>
-        <p className="text-gray-700">
-          <strong>Available:</strong> {car.available ? "Yes" : "No"}
-        </p>
-
+          </p>
         <div className="mt-4 flex gap-3">
           <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
             View Details
