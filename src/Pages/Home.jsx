@@ -46,6 +46,7 @@ const Home = () => {
             value={category}
             onChange={(evt) => setCategory(evt.target.value)}
           >
+            <option value="" disabled>Select Category</option>
             <option>All</option>
             <option>Luxury</option>
             <option>Sports</option>

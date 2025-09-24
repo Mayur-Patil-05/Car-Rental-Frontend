@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CarCard = ({ car }) => {
   return (
@@ -14,11 +15,14 @@ const CarCard = ({ car }) => {
         </h2>
         <p className="text-gray-700">
           <strong>Daily Rate:</strong> ${car.dailyRate}
-          </p>
+        </p>
         <div className="mt-4 flex gap-3">
-          <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          <Link
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+            to={`/cardetails/${car.carId}`}
+          >
             View Details
-          </button>
+          </Link>
           <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded hover:from-purple-600 hover:to-pink-600 transition">
             Book
           </button>
