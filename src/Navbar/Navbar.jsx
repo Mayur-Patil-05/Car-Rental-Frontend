@@ -32,6 +32,9 @@ const Navbar = () => {
             <NavLink to="/about" className={navLinkClass}>
               About
             </NavLink>
+            <NavLink to="/dashboard" className={navLinkClass}>
+              Dashboard
+            </NavLink>
             <NavLink
               to="/login"
               className="ml-4 px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition"
@@ -101,6 +104,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               About
+            </NavLink>
+            <NavLink
+              to="/dashboard"
+              className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+              onClick={toggleMenu}
+            >
+              Dashboard
             </NavLink>
             <NavLink
               to="/login"
